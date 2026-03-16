@@ -1,3 +1,5 @@
+
+
 # Github AI
 
 This repository provides a setup to automatically go through the entire Git
@@ -59,7 +61,5 @@ The entire Git process:
 ```
 aigit
 ```
-
----
 
 
