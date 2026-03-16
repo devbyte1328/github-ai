@@ -56,7 +56,9 @@ aigit() {
     aicommit && \
     aipush && \
     gh pr merge --merge --delete-branch && \
+    git checkout main && \
     git pull && \
+    git branch | xargs git branch -D && \
     git restore . && \
     git clean -fd
 }
