@@ -10,7 +10,7 @@ add, commit, push, merge, and pull process with aicommit and github-cli.
 
 <table width="100%">
 <thead>
-<tr><th align="left">📘 NOTE</th></tr>
+<tr><th align="left">ℹ️ NOTE</th></tr>
 </thead>
 <tbody>
 <tr><td>
