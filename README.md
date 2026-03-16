@@ -13,19 +13,19 @@ add, commit, push, merge, and pull process with aicommit and github-cli.
 ```
 # Your API Key for your LLM provider (e.g., OpenAI, Anthropic, or a self-hosted
 # instance).
-export AI_TOKEN="your_api_key_goes_here"
+echo 'export AI_TOKEN="your_api_key_goes_here"' >> ~/.bashrc
 
 # The exact model identifier you want to use (e.g., gpt-4o, claude-3-5-sonnet,
 # or llama3).
-export AI_NAME="your_llm_name_goes_here"
+echo 'export AI_NAME="your_llm_name_goes_here"' >> ~/.bashrc
 
 # The base URL for the API. For standard providers, use their official URL;
 # for local gateways, use your local IP.
-export AI_ENDPOINT="your_api_endpoint_url_goes_here"
+echo 'export AI_ENDPOINT="your_api_endpoint_url_goes_here"' >> ~/.bashrc
 
 # A GitHub Personal Access Token (Classic). Required for the CLI to automate
 # pushes and merges.
-export GH_TOKEN="your_github_classic_token_goes_here"
+echo 'export GH_TOKEN="your_github_classic_token_goes_here"' >> ~/.bashrc
 ```
 
 ---
