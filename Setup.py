@@ -55,7 +55,6 @@ aigit() {
     git clean -fd
 }
 
-
 """)
 if "aipush()" not in bashrc_script:
     Python_write_file(PATH_OF_BASHRC_SCRIPT, bashrc_aigit_function)
