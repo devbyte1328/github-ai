@@ -22,9 +22,9 @@ if bashrc_cargo_path not in bashrc_script:
 aicommit_config_function = Python_fstring(f"""
 aicommit --add-provider --add-openai-compatible --openai-compatible-api-key
 ''''''
- \"$AI_TOKEN\" --openai-compatible-api-url \"$AI_ENDPOINT\"
+ \"{$AI_TOKEN}\" --openai-compatible-api-url \"{$AI_ENDPOINT}\"
 ''''''
- --openai-compatible-model \"$AI_LLM_NAME\"
+ --openai-compatible-model \"{$AI_LLM_NAME}\"
 """)
 SubProcess_initialize(aicommit_config_function)
 SubProcess_initialize(f"cp STANDARDS.md ~/.github_ai/STANDARDS.md")
