@@ -118,7 +118,7 @@ def Python_return_replace(ANY_STRING, STRING_A, STRING_B):
 def Python_return_uppercase(ANY_STRING):
     return ANY_STRING.upper()
     
-def Python_return_lowercase():
+def Python_return_lowercase(ANY_STRING):
     return ANY_STRING.lower()
 
 

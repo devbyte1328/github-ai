@@ -51,11 +51,15 @@ if "aipush()" not in bashrc_script:
     Python_write_file(PATH_OF_BASHRC_SCRIPT, bashrc_aipush_function)
 bashrc_aigit_function = Python_fstring(f"""
 
-aigit() {{
-    git add . && aicommit && aipush && gh pr merge --merge --delete-branch &&
-''''''
- git pull && git restore . && git clean -fd
-}}
+aigit() {
+    git add . && \
+    aicommit && \
+    aipush && \
+    gh pr merge --merge --delete-branch && \
+    git pull && \
+    git restore . && \
+    git clean -fd
+}
 
 
 """)
