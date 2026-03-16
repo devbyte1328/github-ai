@@ -14,6 +14,7 @@ add, commit, push, merge, and pull process with aicommit and github-cli.
 </thead>
 <tbody>
 <tr><td>
+
 This documentation does not cover how to host an LLM or how to obtain
 
 credentials for cloud-based LLM services, these steps are the responsibility of
