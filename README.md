@@ -8,6 +8,48 @@ add, commit, push, merge, and pull process with aicommit and github-cli.
 
 ---
 
+<table width="100%">
+<thead>
+<tr><th align="left">📘 NOTE</th></tr>
+</thead>
+<tbody>
+<tr><td>
+This documentation does not cover how to host an LLM or how to obtain
+
+credentials for cloud-based LLM services, these steps are the responsibility of
+
+the user. The solution works with any OpenAI-compatible API endpoint and
+
+follows the standard OpenAI API specification for request/response formatting
+
+and authentication. In addition, users are responsible for selecting the LLM
+
+model. You should look for the latest and best-performing LLMs. Below are some
+
+useful resources to help you explore, host, or discover local LLMs:
+
+```
+https://github.com/ggml-org/llama.cpp
+```
+
+```
+https://github.com/open-webui/open-webui
+```
+
+```
+https://huggingface.co/
+```
+
+```
+https://huggingface.co/TheBloke
+```
+
+</td></tr>
+</tbody>
+</table>
+
+---
+
 ## Manual Setup
 
 ```
