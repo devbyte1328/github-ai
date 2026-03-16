@@ -1,6 +1,6 @@
-from Standards import *
-import os
-import subprocess
+from Standards.Python import *
+from Standards.OS import *
+from Standards.SubProcess import *
 
 
 PATH_OF_HOME_USER = OS_return_path_of_home_user()
@@ -19,22 +19,14 @@ if OS_return_boolean_filesystem(FILE_PATH_OF_BASHRC_SCRIPT) == True:
 bashrc_cargo_path = "export PATH=\"$HOME/.cargo/bin:$PATH\""
 if bashrc_cargo_path not in bashrc_script:
     Python_write_file(FILE_PATH_OF_BASHRC_SCRIPT, bashrc_cargo_path)
-SubProcess_initialize(
-    f"aicommit --add-provider --add-openai-compatible " \
-    f"--openai-compatible-api-key \"$AI_TOKEN\" " \
-    f"--openai-compatible-api-url \"$AI_ENDPOINT\" " \
-    f"--openai-compatible-model \"$AI_LLM_NAME\""
-)
-function = Python_fstring(f"""
-aicommit --add-provider 
+aicommit_config_function = Python_fstring(f"""
+aicommit --add-provider --add-openai-compatible --openai-compatible-api-key
 ''''''
- --add-openai-compatible --openai-compatible-api-key \"$AI_TOKEN\"
+ \"$AI_TOKEN\" --openai-compatible-api-url \"$AI_ENDPOINT\"
 ''''''
- --openai-compatible-api-url \"$AI_ENDPOINT\" --openai-compatible-model
-''''''
- \"$AI_LLM_NAME\"
+ --openai-compatible-model \"$AI_LLM_NAME\"
 """)
-SubProcess_initialize(function)
+SubProcess_initialize(aicommit_config_function)
 SubProcess_initialize(f"cp STANDARDS.md ~/.github_ai/STANDARDS.md")
 SubProcess_initialize(f"cp Python.py ~/.github_ai/Python.py")
 SubProcess_initialize(f"cp SubProcess.py ~/.github_ai/SubProcess.py")
